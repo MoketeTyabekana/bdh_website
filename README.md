@@ -1,0 +1,1 @@
+In this project I am using AI to create this website for Botshabelo Digital Hub.
