@@ -1,0 +1,31 @@
+
+
+.our_team{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.our_team  .team_container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.member_image img{
+   width: 100%;
+}
+
+.team_member{
+    text-align: center;
+    background-color:#f5f4f4;
+    border-radius: 5px;
+
+}
