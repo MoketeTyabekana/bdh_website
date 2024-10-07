@@ -21,11 +21,15 @@
 
 .member_image img{
    width: 100%;
+  
 }
+
+
 
 .team_member{
     text-align: center;
     background-color:#f5f4f4;
     border-radius: 5px;
+    padding: 15px;
 
 }
