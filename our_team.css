@@ -1,35 +1,63 @@
+.our_team {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.our_team .team_container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-.our_team{
+.member_image img {
+  width: 100%;
+}
+
+.team_member {
+  text-align: center;
+  background-color: #f5f4f4;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* Stakeholders Styles */
+
+.stakeholders {
+    text-align: center;
     width: 100%;
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    
+    padding: 20px; 
+    background-color: #ffffff;
 }
 
-.our_team  .team_container{
+.logos {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 20px; 
 }
 
-.member_image img{
-   width: 100%;
-  
+.stakeholder_logo {
+    flex: 1 1 150px;
+    max-width: 200px; 
+    text-align: center; 
 }
 
-
-
-.team_member{
-    text-align: center;
-    background-color:#f5f4f4;
-    border-radius: 5px;
-    padding: 15px;
-
+.stakeholder_logo img {
+    width: 100%; 
+    height: auto; 
+   
 }
+
