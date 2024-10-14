@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
+  font-weight: 350;
   font-style: normal;
   height: 100%;
   overflow-x: hidden;
@@ -497,4 +497,13 @@ p {
   .content {
     flex-direction: column;
   }
+}
+
+
+/* Stakeholder */
+
+.stakeholders{
+  background-color: #c0eba6;
+  padding: 40px;
+  display: flex;
 }
