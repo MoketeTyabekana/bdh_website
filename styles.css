@@ -502,8 +502,44 @@ p {
 
 /* Stakeholder */
 
-.stakeholders{
-  background-color: #c0eba6;
-  padding: 40px;
+#stakeholder-content{
+  width: 100%;
+   background-color: #fafafa;
+   text-align: center;
+}
+
+.stakeholders {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+  padding: 20px 40px;
+  
+}
+
+.stakeholder-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stakeholder-logo img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .stakeholder-logo {
+    width: 80px;
+    height: 80px;
+  }
 }
