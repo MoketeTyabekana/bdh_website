@@ -52,3 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// Services
+
+function incubation(){
+    window.open("https://forms.gle/8d4BExyqKu5cXTzT6", "_blank");
+}

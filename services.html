@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Hub - AI Transformation</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,16 +23,14 @@
         </div>
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav>
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <!-- <li><a href="#mission">Our Mission</a></li> -->
-              <li><a href="services.html">Services</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="careers.html">Careers</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
       </header>
       <main>
 
@@ -51,7 +50,7 @@
                   Nurture your tech startup with our comprehensive incubation
                   program.
                 </p>
-                <button class="apply-btn">Apply Now</button>
+                <button onclick="incubation()" class="apply-btn">Apply Now</button>
               </div>
               <div class="service-card">
                 <div class="service-icon">🎓</div>
@@ -60,7 +59,7 @@
                   Enhance your digital skills with our cutting-edge training
                   programs.
                 </p>
-                <button class="apply-btn">Learn More</button>
+                <button onclick="training()" class="apply-btn">Learn More</button>
               </div>
               <div class="service-card">
                 <div class="service-icon">🏢</div>
@@ -71,7 +70,7 @@
                   State-of-the-art facilities for your corporate events and
                   meetings.
                 </p>
-                <button class="apply-btn">Book Now</button>
+                <button onclick="booking()" class="apply-btn">Book Now</button>
               </div>
               <div class="service-card">
                 <div class="service-icon">🖥️</div>
@@ -80,7 +79,7 @@
                   Flexible and modern office spaces for your growing business
                   needs.
                 </p>
-                <button class="apply-btn">Inquire</button>
+                <button onclick="rent()" class="apply-btn">Inquire</button>
               </div>
             </div>
           </div>
