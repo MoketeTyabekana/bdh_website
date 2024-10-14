@@ -52,7 +52,6 @@ nav ul li a {
   padding: 50px 0;
   flex-grow: 1;
   height: 100vh;
-  
 }
 .text-content {
   max-width: 50%;
@@ -135,7 +134,7 @@ p {
     margin-bottom: 10px;
   }
 
- .text-content h1 {
+  .text-content h1 {
     font-size: 26px;
     color: #004d09;
     margin-bottom: 10px;
@@ -208,11 +207,11 @@ p {
   height: 300px;
 }
 
-.services_container{
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 100px;
+.services_container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 100px;
 }
 
 h1 {
@@ -276,29 +275,25 @@ h1 {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    
   }
 }
 
-
-
 /* About us Page */
 
-.about_{
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 100px;
-    
+.about_ {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 100px;
 }
 
-.about_image{
-    width: 100%;
-    height: 300px;
-    background-image: url(https://pbs.twimg.com/media/FNjStU5XIAELjrj?format=jpg&name=4096x4096);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.about_image {
+  width: 100%;
+  height: 300px;
+  background-image: url(https://pbs.twimg.com/media/FNjStU5XIAELjrj?format=jpg&name=4096x4096);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Footer */
@@ -348,9 +343,6 @@ h1 {
   color: #b3b3b3;
 }
 
-
-
-
 @media (max-width: 600px) {
   .social-icons {
     gap: 15px;
@@ -367,12 +359,8 @@ h1 {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    
   }
-
 }
-
-
 
 /* Mission, vision and goals */
 
@@ -382,7 +370,6 @@ h1 {
   margin: 0 auto;
   text-align: center;
   padding: 50px 100px;
-  
 }
 
 .mission_container h2,
@@ -447,17 +434,31 @@ p {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    
   }
 }
 
-
 /* Why us */
 
-.why-chose-us {
+#why-us {
   width: 100%;
-  background-color:#c0eba6;
-  padding: 20px 40px;
+  background: linear-gradient(
+      to bottom right,
+      #dffdcdb3,
+      #c0eba6d5
+    ),
+    url("https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat center center/cover;
+ 
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+}
+
+.why-chose-us {
+  width: 95%;
+  padding: 40px;
 }
 h2 {
   font-size: 36px;
@@ -467,29 +468,28 @@ h2 {
   display: inline-block;
 }
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
   width: 100%;
   height: 3px;
-  background-color:#004d00;
+  background-color: #090909;
 }
 .content {
   display: flex;
-  column-gap: 20px;
-  
- 
+  gap: 40px;
 }
 .column {
   flex: 1;
   height: auto;
-
+  text-align: justify;
 }
+
 p {
   font-size: 16px;
   line-height: 1.6;
-  color: #004d00;
+  color: #000000;
   margin-bottom: 20px;
 }
 
