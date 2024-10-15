@@ -7,6 +7,11 @@ html {
   font-style: normal;
   height: 100%;
   overflow-x: hidden;
+  
+}
+
+body{
+  padding-top: 80px;
 }
 
 .container {
@@ -19,9 +24,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 40px;
   background-color: #c0eba6;
-  font-weight: 400;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures the header stays on top of other elements */
 }
 
 .logo img {
@@ -290,10 +299,21 @@ h1 {
 .about_image {
   width: 100%;
   height: 300px;
-  background-image: url(https://pbs.twimg.com/media/FNjStU5XIAELjrj?format=jpg&name=4096x4096);
+  background: linear-gradient(
+      to bottom right,
+      #c7ffa7b3,
+      #9fff64d5
+    ),
+    url("https://pbs.twimg.com/media/FNjStU5XIAELjrj?format=jpg&name=4096x4096") no-repeat center center/cover;
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c0eba6;
 }
 
 /* Footer */
@@ -303,7 +323,7 @@ h1 {
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  padding: 20px;
+  padding: 40px;
 }
 
 .social-icons {
@@ -402,17 +422,17 @@ p {
   margin-bottom: 10px;
 }
 .title span {
-  color: #00bcd4;
+  color: #004d00;
 }
 .description {
   font-size: 14px;
-  color: #666;
+  color: #004d00;
   line-height: 1.5;
 }
 .divider {
   width: 50px;
   height: 2px;
-  background-color: #00bcd4;
+  background-color: #004d00;
   margin: 15px auto;
 }
 @media (max-width: 768px) {
@@ -454,6 +474,8 @@ p {
   align-items: center;
   align-content: center;
   height: auto;
+
+  text-align: center;
 }
 
 .why-chose-us {
@@ -462,12 +484,12 @@ p {
 }
 h2 {
   font-size: 36px;
-  color: #000000;
+  color: #004d00;
   margin-bottom: 20px;
-  position: relative;
   display: inline-block;
 }
-h2::after {
+
+/* h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -475,7 +497,8 @@ h2::after {
   width: 100%;
   height: 3px;
   background-color: #090909;
-}
+} */
+
 .content {
   display: flex;
   gap: 40px;
@@ -504,7 +527,7 @@ p {
 
 #stakeholder-content{
   width: 100%;
-   background-color: #fafafa;
+   background-color:#ffffff51;
    text-align: center;
 }
 
@@ -543,3 +566,6 @@ p {
     height: 80px;
   }
 }
+
+/* Contact us */
+
