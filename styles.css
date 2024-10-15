@@ -7,11 +7,12 @@ html {
   font-style: normal;
   height: 100%;
   overflow-x: hidden;
-  
 }
 
-body{
-  padding-top: 80px;
+body {
+  /* padding-top: 95px; */
+  background-color: #fffbe6;
+
 }
 
 .container {
@@ -25,12 +26,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #c0eba6;
-  position: fixed;
+  background-color: #fffbe6;
+
+  /* From https://css.glass */
+  /* background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+  
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensures the header stays on top of other elements */
+  z-index: 1000;  */
 }
 
 .logo img {
@@ -150,6 +158,10 @@ p {
     text-align: center;
   }
 
+  .services_{
+    text-align: justify;
+  }
+
   .image-content {
     justify-content: center;
     margin: 0;
@@ -223,7 +235,6 @@ p {
   padding: 50px 100px;
 }
 
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -283,50 +294,52 @@ p {
   }
 }
 
+.drone-tour{
+  width: 100%;
+ text-align: center;
+}
+
+
 /* About us Page */
 
 .about_ {
   max-width: 100%;
   margin: 0 auto;
   text-align: justify;
-  
 }
 
-.about-content{
+.about-content {
   display: flex;
   padding: 60px 40px;
   gap: 20px;
 }
 
-iframe{
+.about-content iframe {
   flex: 1;
   border-radius: 10px;
 }
 
-.about_{
+.about_ {
   flex: 1;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
-.about_image h1{
+.about_image h1 {
   color: #c0eba6;
-  text-transform:capitalize;
-  
+  text-transform: capitalize;
 }
 
-.about_image, .services_banner {
+.about_image,
+.services_banner {
   width: 100%;
   height: 300px;
-  background: linear-gradient(
-      to bottom right,
-      #1b1b1bb3,
-      #000000b1
-    ),
-    url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
-  
+  background: linear-gradient(to bottom right, #1b1b1bb3, #000000b1),
+    url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      no-repeat center center/cover;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -482,13 +495,10 @@ p {
 
 #why-us {
   width: 100%;
-  background: linear-gradient(
-      to bottom right,
-      #dffdcdb3,
-      #c0eba6d5
-    ),
-    url("https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat center center/cover;
- 
+  background: linear-gradient(to bottom right, #dffdcdb3, #c0eba6d5),
+    url("https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&w=600")
+      no-repeat center center/cover;
+
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -543,13 +553,12 @@ p {
   }
 }
 
-
 /* Stakeholder */
 
-#stakeholder-content{
+#stakeholder-content {
   width: 100%;
-   background-color:#ffffff51;
-   text-align: center;
+  background-color: #ffffff51;
+  text-align: center;
 }
 
 .stakeholders {
@@ -560,7 +569,6 @@ p {
   text-align: center;
   gap: 20px;
   padding: 20px 40px;
-  
 }
 
 .stakeholder-logo {
@@ -589,4 +597,3 @@ p {
 }
 
 /* Contact us */
-
