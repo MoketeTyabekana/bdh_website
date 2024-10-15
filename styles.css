@@ -223,11 +223,7 @@ p {
   padding: 50px 100px;
 }
 
-h1 {
-  text-align: center;
-  color: #006400;
-  margin-bottom: 30px;
-}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -292,19 +288,44 @@ h1 {
 .about_ {
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
-  padding: 50px 100px;
+  text-align: justify;
+  
 }
 
-.about_image {
+.about-content{
+  display: flex;
+  padding: 60px 40px;
+  gap: 20px;
+}
+
+iframe{
+  flex: 1;
+  border-radius: 10px;
+}
+
+.about_{
+  flex: 1;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+.about_image h1{
+  color: #c0eba6;
+  text-transform:capitalize;
+  
+}
+
+.about_image, .services_banner {
   width: 100%;
   height: 300px;
   background: linear-gradient(
       to bottom right,
-      #c7ffa7b3,
-      #9fff64d5
+      #1b1b1bb3,
+      #000000b1
     ),
-    url("https://pbs.twimg.com/media/FNjStU5XIAELjrj?format=jpg&name=4096x4096") no-repeat center center/cover;
+    url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
   
   background-position: center;
   background-size: cover;
