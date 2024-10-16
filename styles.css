@@ -25,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 100px;
   background-color: #fffbe6;
 
   /* From https://css.glass */
@@ -66,13 +66,14 @@ nav ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0;
-  flex-grow: 1;
+  padding:10px 0;
   height: 100vh;
+  flex-grow: 1;
+  
 }
 .text-content {
   max-width: 50%;
-  padding-left: 20px;
+  padding-left: 100px;
 }
 
 .text-content h1 {
@@ -178,11 +179,9 @@ p {
 @media (max-width: 720px) {
   .menu-toggle {
     display: block;
-    position: absolute;
     right: 20px;
     top: 20px;
     color: #ffffff;
-    position: fixed;
   }
 
   header {
@@ -290,15 +289,23 @@ p {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: 20px 100px;
   }
 }
 
 .drone-tour{
   width: 100%;
  text-align: center;
+background-color: #e5ffe5;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
 
+.drone-tour iframe{
+  margin: 20px 100px 100px 100px;
+  height:400px;
+}
 
 /* About us Page */
 
@@ -310,7 +317,7 @@ p {
 
 .about-content {
   display: flex;
-  padding: 60px 40px;
+  padding: 60px 100px;
   gap: 20px;
 }
 
@@ -336,8 +343,8 @@ h1 {
 .services_banner {
   width: 100%;
   height: 300px;
-  background: linear-gradient(to bottom right, #1b1b1bb3, #000000b1),
-    url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+  background: linear-gradient(to bottom right, #003a0fcd, #003f12b1),
+    url("images/Firefly\ Create\ a\ striking\ web\ banner\ in\ an\ illustrative\ style\ that\ embodies\ the\ theme\ of\ the\ Fourth\ .jpg")
       no-repeat center center/cover;
 
   background-position: center;
@@ -505,13 +512,13 @@ p {
   align-items: center;
   align-content: center;
   height: auto;
-
+  width: 100%;
   text-align: center;
 }
 
 .why-chose-us {
-  width: 95%;
-  padding: 40px;
+  width: 100%;
+  padding: 20px 100px;
 }
 h2 {
   font-size: 36px;
@@ -555,10 +562,14 @@ p {
 
 /* Stakeholder */
 
-#stakeholder-content {
+.stakeholder-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   background-color: #ffffff51;
   text-align: center;
+ 
 }
 
 .stakeholders {
@@ -567,13 +578,15 @@ p {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  gap: 20px;
-  padding: 20px 40px;
+ padding: 20px 100px;
+  column-gap: 20px;
+ 
+
 }
 
 .stakeholder-logo {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background-color: white;
   display: flex;
